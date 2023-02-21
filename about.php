@@ -3,11 +3,15 @@ require('./config.php');
 $page_name = 'about';
 require('./header.php');
 ?>
+<div class="py-4 bg-light">
+    <div class="container">
+        <div class="h3 mb-0">Company Profile</div>
+    </div>
+</div>
 <div class="container py-4">
-    <div class="h3 mb-3">Company Profile</div>
-    <div class="lead mb-4 border-bottom border-1 d-inline-block">This is a very good website and I am sure it can bring your happy.</div>
+    <div class="lead mb-4">This is a very good website and I am sure it can bring your happy.</div>
     <div class="h3 mb-3">Contact Us</div>
-    <div class="mb-3 lead border-bottom border-1 d-inline-block">
+    <div class="mb-3 lead">
         We are some people love learing and share.
     </div>
     <ul>

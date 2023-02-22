@@ -16,14 +16,14 @@
     <!-- This is the navigation bar of the website -->
     <nav class="navbar navbar-expand-sm bg-light shadow-sm sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="./"><?php Config::load(Config::$site_name) ?></a>
+            <a class="navbar-brand" href="./index.html"><?php Config::load(Config::$site_name) ?></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-sm-0">
                     <li class="nav-item">
-                        <a class="nav-link <?php if ($page_name == 'home') echo 'active' ?>" href="./">Home</a>
+                        <a class="nav-link <?php if ($page_name == 'home') echo 'active' ?>" href="./index.html">Home</a>
                     </li>
                     <?php foreach (Config::$nav_links as $nav_link) : ?>
                         <li class="nav-item">

@@ -9,9 +9,13 @@ require('./header.php');
     </div>
 </div>
 <div class="container py-4">
-    <div class="lead mb-4">This is a very good website and I am sure it can bring your happy.</div>
+    <div class="mb-4 fw-bold" style="max-width: 500px;">"Most of the world's leading companies andinstitutions
+        realize now that their license to dobusiness is severely threatened by climate
+        changeand loss of ecosystem function.
+        As a result, theurgency to act is more palpable than it was eventwo years ago.
+        We're as ready as ever to help thosecompanies and organizations make the leap."</div>
     <div class="h3 mb-3">Contact Us</div>
-    <div class="mb-3 lead">
+    <div class="mb-4 fw-bold" style="max-width: 500px;">
         We are some people love learing and share.
     </div>
     <ul>

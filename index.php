@@ -19,7 +19,7 @@ require('./header.php');
         <a class="btn-lg btn btn-outline-primary" href="./service.php">Find Out More</a>
     </div>
     <div class="mb-5">
-        <?php require('./video_row.php') ?>
+        <?php require('./photo_row.php') ?>
     </div>
     <?php require('./service_row.php') ?>
 </div>

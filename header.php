@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/bootstrap/5.2.3/css/bootstrap.min.css">
-    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <!-- Introduce Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- Website title -->
     <title><?php Config::load(ucwords($page_name)) ?> - <?php Config::load(Config::$site_name) ?></title>
 </head>
 
 <body>
+    <!-- This is the navigation bar of the website -->
     <nav class="navbar navbar-expand-sm bg-light shadow-sm sticky-top">
         <div class="container">
             <a class="navbar-brand" href="./"><?php Config::load(Config::$site_name) ?></a>
@@ -29,6 +31,7 @@
                         </li>
                     <?php endforeach ?>
                 </ul>
+                <!-- Search box -->
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Search</button>

@@ -27,7 +27,7 @@
                     </li>
                     <?php foreach (Config::$nav_links as $nav_link) : ?>
                         <li class="nav-item">
-                            <a class="nav-link <?php if ($nav_link == $page_name) echo 'active' ?>" href="./<?php Config::load($nav_link) ?>.php"><?php Config::load(ucwords($nav_link)) ?></a>
+                            <a class="nav-link <?php if ($nav_link == $page_name) echo 'active' ?>" href="./<?php Config::load($nav_link) ?>.html"><?php Config::load(ucwords($nav_link)) ?></a>
                         </li>
                     <?php endforeach ?>
                 </ul>

@@ -10,5 +10,5 @@ class Config
     {
         echo $value;
     }
-    public static array $nav_links = ['service', 'photo', 'about'];
+    public static array $nav_links = ['service', 'photo', 'about', 'contact'];
 }

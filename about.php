@@ -14,15 +14,6 @@ require('./header.php');
         changeand loss of ecosystem function.
         As a result, theurgency to act is more palpable than it was eventwo years ago.
         We're as ready as ever to help thosecompanies and organizations make the leap."</div>
-    <div class="h3 mb-3">Contact Us</div>
-    <div class="mb-4 fw-bold" style="max-width: 500px;">
-        We are some people love learing and share.
-    </div>
-    <ul>
-        <li>Email: aaabbccc@gmail.com</li>
-        <li>Address: Beijing</li>
-        <li>Phone Num: 12345678</li>
-    </ul>
     <img src="./img/logo.jpg" alt="Logo" style="width: 200px;">
 </div>
 <?php

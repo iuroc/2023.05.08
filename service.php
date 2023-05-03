@@ -1,15 +1,6 @@
 <?php
-require('./config.php');
+require_once('./config.php');
 $page_name = 'service';
-require('./header.php');
-?>
-<div class="py-4 bg-light">
-    <div class="container">
-        <div class="h3 mb-0">Service</div>
-    </div>
-</div>
-<div class="container py-4">
-    <?php require('./service_row.php') ?>
-</div>
-<?php
-require('./footer.php');
+require_once('./header.php');
+require_once('./service_body.php');
+require_once('./footer.php');

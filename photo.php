@@ -1,15 +1,6 @@
 <?php
-require('./config.php');
-$page_name = 'video';
-require('./header.php');
-?>
-<div class="py-4 bg-light">
-    <div class="container">
-        <div class="h3 mb-0">Company Photo</div>
-    </div>
-</div>
-<div class="container py-4">
-    <?php require('./photo_row.php') ?>
-</div>
-<?php
-require('./footer.php');
+require_once('./config.php');
+$page_name = 'photo';
+require_once('./header.php');
+require_once('./photo_body.php');
+require_once('./footer.php');

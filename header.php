@@ -1,3 +1,8 @@
+<?php
+
+
+error_reporting(0);
+?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -8,11 +13,20 @@
     <!-- Introduce Bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery.min.js"></script>
     <!-- Website title -->
-    <title><?php Config::load(ucwords($page_name)) ?> - <?php Config::load(Config::$site_name) ?></title>
+    <title><?php if (!$router) {
+                Config::load(ucwords($page_name));
+                Config::load(' - ');
+                Config::load(Config::$site_name);
+            } else {
+                Config::load('Future Studio');
+            } ?></title>
 </head>
 
 <body>
+    <?php
+    ?>
     <!-- This is the navigation bar of the website -->
     <nav class="navbar navbar-expand-sm bg-light shadow-sm sticky-top">
         <div class="container">
@@ -23,11 +37,12 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-sm-0">
                     <li class="nav-item">
-                        <a class="nav-link <?php if ($page_name == 'home') echo 'active' ?>" href="./index.html">Home</a>
+                        <a class="nav-link <?php if ($page_name == 'home') echo 'active' ?>" href="<?php echo $router ? '#' : './index.html' ?>">Home</a>
                     </li>
                     <?php foreach (Config::$nav_links as $nav_link) : ?>
                         <li class="nav-item">
-                            <a class="nav-link <?php if ($nav_link == $page_name) echo 'active' ?>" href="./<?php Config::load($nav_link) ?>.html"><?php Config::load(ucwords($nav_link)) ?></a>
+                            <a class="nav-link <?php if ($nav_link == $page_name) echo 'active' ?>" href="<?php echo $router ? "#/{$nav_link}" : "./{$nav_link}.html"
+                                                                                                            ?>"><?php Config::load(ucwords($nav_link)) ?></a>
                         </li>
                     <?php endforeach ?>
                 </ul>

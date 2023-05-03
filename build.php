@@ -1,10 +1,10 @@
 <?php
 
-require('./config.php');
+require_once('./config.php');
 if (!file_exists('public')) {
     mkdir('public');
 }
-array_push(Config::$nav_links, 'index');
+array_push(Config::$nav_links, 'index', 'router');
 foreach (Config::$nav_links as $nav_link) {
     $file_name = $nav_link . '.html';
     $url = 'http://localhost/' . $file_name;

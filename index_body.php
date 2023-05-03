@@ -10,7 +10,7 @@
         <img src="./img/logo.jpg" alt="Logo" style="width: 200px;">
     </div>
     <div class="text-center mb-5">
-        <a class="btn-lg btn btn-outline-primary" href="./service.html">Find Out More</a>
+        <a class="btn-lg btn btn-outline-primary" href="<?php echo $router ? '#/service' : './service.html' ?>">Find Out More</a>
     </div>
     <div class="mb-5">
         <?php require_once('./photo_row.php') ?>

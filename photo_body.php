@@ -1,4 +1,4 @@
-<div class="py-4 bg-light">
+<div class="py-4 bg-light bg-white">
     <div class="container">
         <div class="h3 mb-0">Company Photo</div>
     </div>

@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row bg-white">
     <?php
     $imgs = ['b.jpg', 'c.jpg', 'd.jpg', 'e.jpg'];
     for ($x = 0; $x < 4; $x++) : ?>

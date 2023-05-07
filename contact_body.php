@@ -3,7 +3,7 @@
         <div class="h3 mb-0">Contact Us</div>
     </div>
 </div>
-<div class="container py-4">
+<div class="container py-4 bg-white">
     <div class="mb-4 fw-bold" style="max-width: 500px;">
         We are some people love learing and share.
     </div>

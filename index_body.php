@@ -5,7 +5,7 @@
         </div>
     </div>
 </div>
-<div class="container py-5">
+<div class="container py-5 bg-white">
     <div class="text-center pb-5">
         <img src="./img/logo.jpg" alt="Logo" style="width: 200px;">
     </div>

@@ -22,15 +22,14 @@ error_reporting(0);
             } else {
                 Config::load('Future Studio');
             } ?></title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
-    <?php
-    ?>
     <!-- This is the navigation bar of the website -->
     <nav class="navbar navbar-expand-sm bg-light shadow-sm sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="./index.html"><?php Config::load(Config::$site_name) ?></a>
+            <a class="navbar-brand" href="<?php echo $router ? '#' : './index.html' ?>"><?php Config::load(Config::$site_name) ?></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -47,10 +46,15 @@ error_reporting(0);
                     <?php endforeach ?>
                 </ul>
                 <!-- Search box -->
-                <form class="d-flex" role="search">
+                <div class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                    <button class="btn btn-outline-success search" type="submit">Search</button>
+                </div>
+                <script>
+                    jQuery('.search').click(() => {
+                        alert('搜索成功')
+                    })
+                </script>
             </div>
         </div>
     </nav>
